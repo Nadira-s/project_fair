@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face{
+    font-family: myFont;
+    src:url(space-games.regular.otf)
+}
+*{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ position:relative;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    background-image: url(./The\ milky\ way\ night\ sky\ wallpaper.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+  
+}
+header{
+    width:100%;
+    height: fit-content;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+   background-color: #0000004a;
+    z-index: 100;
+    padding: 10px 15px;
+}
+header  a {
+    font-family: "Popins",sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+ header a:hover {
+    transform: scale(1.1);
+    color: #666666;
+}
+header img{
+    width:50px
+}
+header a{
+    text-decoration: none;
+    padding:20px;
+    font-family:"Popins",sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+header button{
+    width:6rem;
+    padding:10px 0;
+    font-size: 16px;
+    font-family:"Popins",sans-serif ;
+    font-weight: 300;
+    border-radius: 30px;
+    transition: 0.3s;
+    border:none
+}
+main{
+    position:relative;
+    top:0;
+    left:0
+}
+main img{
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+#moon{
+  position:absolute;
+  top:1vh;
+  width:100vw;
+  transform: translateZ(8px);
+  animation-name: animate-moon;
+}
+
+#earth{
+    width:30vw;
+    position:absolute;
+    top:20vh;
+    left:70vw;
+    transform: translateZ(10px);
+    animation-name: animate-earth;
+}
+@keyframes animate-earth{
+    from{
+       top:15vh
+    }
+    to{
+       top:5vh 
+    }
+}
+#satellite{
+    position:absolute;
+    top:5vh;
+    left:5vw;
+    width:30vw;
+    animation-name: animate-satellite;
+}
+@keyframes animate-satellite{
+    from{top:5vh}
+    to{top:20vh}
+}
+main h1{
+    font-family: myFont;
+    font-size: 100px;
+    color:white;
+    z-index:101;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+   
+}
+menu{
+   width:100vw;
+   height:100vh;
+   background-color: black;
+   position:relative;
+}
+#black{
+    width:100vw;
+    height:30vh;
+    position:absolute;
+    top:87vh;
+    z-index: index 3;
+}
+.menu-top{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+.menu-top h1{
+    font-size: 70px;
+    font-family: "Popins",sans-serif;
+    font-weight:500 ;
+}
+.menu-top h5{
+    font-size: 15px;
+    text-align: center;
+    font-family: "Popins",sans-serif;
+    font-weight:300 ;
+}
+.menu-bottom{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px
+}
+.menu-box{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+width:70vw;
+grid-gap:20px;
+height: 50vh;
+
+margin:20px;
+}
+.menu-box .box{
+background-color:transparent
+}
+.menu-video {
+    width: 100%;  /* Ширина контейнера на весь экран */
+    height: 70vh; /* Высота контейнера на весь экран */
+    overflow: hidden; /* Скрытие части видео, которая выходит за границы */
+}
+
+video {
+    width: 100%;  /* Видео заполняет всю ширину контейнера */
+    height: 100%; /* Видео заполняет всю высоту контейнера */
+    object-fit: cover; /* Видео сохраняет пропорции, но заполняет весь контейнер */
+}
+.menu-button{
+width:100vw;
+height: 20vh;
+display:flex;
+justify-content: center;
+align-items: center;
+
+background-color: black;
+}
+.menu-top h5{
+    color:#ffffffb3;
+    width:50vw
+}
+ .menu-button a {
+    font-family: "Popins",sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+ .menu-button a:hover {
+    transform: scale(1.1);
+    color: #666666;
+}
+
+footer {
+    background-color: #0a0a0a;
+    padding: 30px 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container .social-links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #ccc;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+   
+}
+.section-container1{
+    width:90%;
+    height:50vh;
+    display:grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap:20px;
+    margin-bottom:15vh
+
+}
+.section-container1 img{
+    object-fit: cover;
+     width:100%;
+     height:100%;
+}
+.section-box1{
+    grid-area:1/1/3/3;
+    background-color:red;
+}
+.section-box2{
+    background-color:red;
+    grid-area:1/3/3/4;
+}
+.section-box3{
+    background-color: red;
+}
+.section-box4{
+    background-color: red;
+}
+.section-container2{
+    width:90%;
+    height:10vh;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.section-container2 img{
+    width:70px;
+    border-radius:35px;
+}
+.section-desc1{
+    display:flex;
+    flex-direction: column ;
+    color:white;
+    font-family: "Popins",sans-serif;
+    font-size: 13px;
+}
+.section1{
+    display:grid;
+    grid-template-columns: 30% 70%;
+}
+.footer-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #fff;
+}
+
+.footer-logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+.footer-bottom a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 376px) {
+    header {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    header a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    header img {
+        width: 40px;
+    }
+    #title{
+        z-index: -1;
+    }
+    #earth{
+        z-index:-2
+    }
+    #title{
+        text-align: center;
+        position: relative;
+        bottom:10vh;
+        left:2.2vw
+    
+    }
+    #moon{
+            position:absolute;
+            top:60vh;
+            width:100vw;
+            transform: translateZ(8px);
+            animation-name: animate-moon;
+        
+    }
+    #black{
+        width:100vw;
+        height:40vh;
+        position:absolute;
+        top:70vh;
+        z-index: index 3;
+    }
+    main h1 {
+        font-size: 50px;
+    }
+    menu{
+        height: 330vh;
+    }
+    .menu-top h1 {
+        font-size: 40px;
+    }
+
+    .menu-top h5 {
+        font-size: 12px;
+    }
+
+    .menu-box {
+        grid-template-columns: 1fr; /* Stack boxes vertically */
+        width: 90vw; /* Make menu-box width smaller */
+        height: auto; /* Auto height for stacking */
+    }
+
+    .menu-box .box {
+        padding: 10px;
+    }
+
+    .menu-video {
+        height: 60vh;
+    }
+
+    .menu-button a {
+        font-size: 22px;
+    }
+   section{
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: black;
+   height:250vh
+   }
+   .section-container1{
+    display:flex;
+    flex-direction: column;
+    
+   }
+   .section-container2{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    bottom:-125vh;
+    gap:10px;
+  
+   }
+    footer {
+        padding: 20px 10px;
+        font-size: 12px;
+       position:relative;
+       bottom:15vh;
+        width:100vw;
+    }
+
+    .footer-container .social-links {
+        gap: 10px;
+    }
+
+    .footer-container .social-links a {
+        font-size: 18px;
+    }
+    
+}
